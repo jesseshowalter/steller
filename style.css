@@ -77,36 +77,17 @@ body{
 	text-shadow:1px 1px 0 #000;
 }
 
-
-
-/* Text Styles for the page */
-h1 {
-	font-size: 4rem;
-	text-transform: uppercase;
-	margin-bottom:20px;
+a:link, a:visited{
+	color:#E0CB77;
+	text-decoration: none;
 }
-h2 {
-	font-size: 2.5rem;
-	line-height: 4rem;
-	margin-bottom:20px;
+a:active{
+	color:#3F5263;
 }
-h3 {
-	font-size: 1.6rem;
-	line-height: 2.5rem;
-	margin-bottom:20px;
+a:hover{
+	text-decoration: underline;
 }
-p {
-	font-size: 1rem;
-	line-height: 2rem;
-}
-blockquote {
-	font-size: 1.2rem;
-}
-pre {
-	font-size: 0.9rem;
-}
-
-.btn {
+a.btn {
 	border: 3px solid #E0CB77;
 	font-family: inherit;
 	font-size: inherit;
@@ -127,10 +108,43 @@ pre {
 	   -moz-transition:all 0.1s ease-in-out;
 	        transition:all 0.1s ease-in-out;
 }
-.btn:hover{
+a.btn:hover{
 	background:#E0CB77;
 	color:white;
 }
+
+
+/* Text Styles for the page */
+h1 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin-bottom:20px;
+}
+h2 {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	line-height: 4rem;
+	margin-bottom:20px;
+}
+h3 {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	line-height: 2.5rem;
+	margin-bottom:20px;
+}
+p {
+	font-size: 1rem;
+	line-height: 2rem;
+	text-shadow:none;
+}
+blockquote {
+	font-size: 1.2rem;
+}
+pre {
+	font-size: 0.9rem;
+}
+
+
 
 .content{
 	display:block;
@@ -138,9 +152,15 @@ pre {
 	width:100%;
 	max-width: 960px;
 	margin:0 auto;
+	overflow:hidden;
 }
-
-
+.content img{
+	width:25%;
+	height:auto;
+	float:left;
+	display:inline;
+	padding:10px;
+}
 
 /* Section Styles for the page */
 section{
@@ -150,22 +170,7 @@ section{
 	background-size: cover;
 	background-attachment: fixed;
 }
-.photoContainer{
-	position: relative;
-  	z-index: 1;
-}
-.photoContainer:after{
-	background:rgba(0, 0, 0, 0.5);
-	content: "";
-	width: 100%;
-	height: auto;
-	position: absolute;
-	z-index: -1; 
- 	top: 0;
-	right: 0;
-	left: 0;
-	bottom: 0;
-}
+
 .wrapper{
 	color:#000;
 	text-shadow:none;
@@ -189,6 +194,23 @@ section{
 }
 .bottom{
 	background:#26292C;
+}
+
+.overlay{
+	position: relative;
+  	z-index: 1;
+}
+.overlay:after{
+	background:rgba(0, 0, 0, 0.6);
+	content: "";
+	width: 100%;
+	height: auto;
+	position: absolute;
+	z-index: -1; 
+ 	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 
 
